@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: edureka-devops-project
-        image: edurekadevops/edureka_demo:latest
+        image: juliannonso/edureka_demo:latest
         imagePullPolicy: always
         ports:
         - containerPort: 8080
