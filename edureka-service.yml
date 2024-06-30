@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     app: edureka-devops-project
-    type: NodePort  ## you can use  Loadbalncer if working on EKS cluster
+    type: LoadBalancer # NodePort  ## you can use  Loadbalncer if working on EKS cluster
     ports:
       - port: 8080  # Virtual LB port, you can define any port of your choice
-        nodePort: 31200   ## range between 30,000 to 32,976
+        nodePort: 32200   ## range between 30,000 to 32,976
