@@ -6,7 +6,7 @@
   - name: create docker image using war file
     command: docker image build -t edureka_demo:latest .
     args:
-      chdir: /opt/playbooks
+      chdir: //home//ubuntu
       
   - name: create tag to image
     command: docker image tag edureka_demo:latest juliannonso/edureka_demo:latest
