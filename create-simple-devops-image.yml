@@ -11,7 +11,7 @@
   - name: create tag to image
     command: docker image tag edureka_demo:latest juliannonso/edureka_demo:latest
     
-  - name: push immage on to docker
+  - name: push image on to docker
     command: docker image push juliannonso/edureka_demo:latest
     
   - name: remove docker image from ansible server
