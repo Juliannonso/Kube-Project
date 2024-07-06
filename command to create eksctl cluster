@@ -1,0 +1,1 @@
+eksctl create cluster --name edureka-cluster --region us-east-1 --instance-type t2.medium --node-max 2 --node-min 2 --zones us-east-1c,us-east-1b
