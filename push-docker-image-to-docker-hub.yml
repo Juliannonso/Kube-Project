@@ -1,0 +1,13 @@
+---
+- hosts: localhost
+  become: true
+
+  tasks:
+  - name: docker hub login
+    command: docker login -u "julianomenwa@gmail.com" -p "Obiunoosumenyi1983" docker.io
+  - name: push image on to docker
+    command: docker image push juliannonso/edureka_demo:latest
+
+  - name: remove docker image from ansible server
+    command: docker image rm edureka_demo:latest juliannonso/edureka_demo:latest
+    ignore_errors: yes
