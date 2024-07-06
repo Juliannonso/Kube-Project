@@ -1,0 +1,1 @@
+eksctl delete cluster edureka-cluster --region us-east-1
