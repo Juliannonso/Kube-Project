@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: edureka-service
+  labels:
+    app: edureka-devops-project
+spec:
+  ports:
+  - port: 8090 # internal port
+    nodePort: 30001 #external front end port (starts from 30000 to 
+    targetPort: edureka-devops-project # or app port (8080)
+    protocol: TCP
+  selector:
+    app: edureka-devops-project
+  type: NodePort
