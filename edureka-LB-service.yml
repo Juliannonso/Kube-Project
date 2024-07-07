@@ -1,1 +1,14 @@
-
+apiVersion: v1
+kind: Service
+metadata:
+  name: edureka-service
+  labels:
+    app: edureka-devops-project
+spec:
+   ports:
+   - port: 80  # Virtual LB port, you can define any port of your choice
+     targetPort: edureka-devops-project  # or app port (8080)
+  selector:
+    app: edureka-devops-project
+  type: LoadBalancer # NodePort  ## you can use  Loadbalncer if working on EKS cluster
+   
