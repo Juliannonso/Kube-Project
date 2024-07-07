@@ -1,0 +1,13 @@
+apiVersion: v1 # for version before 1.9.0 use apps/v1beta2
+kind: Pod
+metadata:
+  name: edureka-deployment
+  labels:
+    app: edureka-devops-project
+spec:
+  containers:
+    - name: edureka-devops-project
+      image: juliannonso/edureka_demo:latest
+      ports:
+        - name: edureka-devops-project
+          containerPort: 8080
