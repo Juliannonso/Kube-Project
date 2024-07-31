@@ -4,8 +4,8 @@ metadata:
   name: helloworld-service
 spec:
   ports:
-  - port: 80
-    targetPort: vproapp-port
+  - port: 80 #loadbalancer port number
+    targetPort: vproapp-port #pod port number
     protocol: TCP
   selector: 
        app: vproapp
