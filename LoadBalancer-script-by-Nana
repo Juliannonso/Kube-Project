@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: edureka-project
+  ports:
+    - protocol: TCP
+      port: 80 #port number of loadbalancer
+      targetPort: 8080
+  #clusterIP: 10.0.171.239
